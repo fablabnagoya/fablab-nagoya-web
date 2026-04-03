@@ -1,58 +1,61 @@
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  image: string;
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Fab Academyとは',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: '3Dプリンタ',
+    image: '/img/Bambu_P2S.jpeg',
     description: (
       <>
-        Fabアカデミーは、ペースの速い実践的な学習体験で、学生は毎週新しいプロジェクトを計画して実行することでラピッドプロトタイピングを学習し、技術スキルの個人ポートフォリオを作成します。
+        Bambu Lab P2S
       </>
     ),
   },
   {
-    title: 'Fab Academyとは',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'レーザー加工機',
+    image: '/img/AQLV-400.jpeg',
     description: (
       <>
-        Fabアカデミーは、ペースの速い実践的な学習体験で、学生は毎週新しいプロジェクトを計画して実行することでラピッドプロトタイピングを学習し、技術スキルの個人ポートフォリオを作成します。
+        LASER VELOCITY AQLV-400<br />40W CO2レーザー。数ミリ厚までのMDFやアクリル板をレーザーで切削加工することができます。
       </>
     ),
   },
   {
-    title: 'Fab Academyとは',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'CNCフライス盤',
+    image: '/img/3018-pro-max_1.jpg',
     description: (
       <>
-        Fabアカデミーは、ペースの速い実践的な学習体験で、学生は毎週新しいプロジェクトを計画して実行することでラピッドプロトタイピングを学習し、技術スキルの個人ポートフォリオを作成します。
+        LUNYEE 3018 PRO MAX<br />
+        主に基板を切削加工するために使用しています。
       </>
     ),
   },
   {
-    title: 'Fab Academyとは',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: '大判CNCルーター',
+    image: '/img/Maslow4.jpg',
     description: (
       <>
-        Fabアカデミーは、ペースの速い実践的な学習体験で、学生は毎週新しいプロジェクトを計画して実行することでラピッドプロトタイピングを学習し、技術スキルの個人ポートフォリオを作成します。
+        幅900mm × 長さ1800mmのコンパネ(コンクリート型枠用合板)を切削加工するために使用しています。数mmの誤差があり、あまり精度は良くありません。
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, image, description}: FeatureItem) {
+  const imgSrc = useBaseUrl(image);
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--3')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={imgSrc} className={styles.featureSvg} role="img" alt={title} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
@@ -66,6 +69,7 @@ export default function HomepageFeatures(): ReactNode {
   return (
     <section className={styles.features}>
       <div className="container">
+        <Heading as="h2" className={styles.sectionTitle}>工具</Heading>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />

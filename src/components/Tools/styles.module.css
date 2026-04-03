@@ -5,6 +5,30 @@
   width: 100%;
 }
 
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.sectionTitle::before,
+.sectionTitle::after {
+  content: '';
+  flex: 1;
+  max-width: 200px;
+  height: 1px;
+  background-color: #ccc;
+}
+
+[data-theme='dark'] .sectionTitle::before,
+[data-theme='dark'] .sectionTitle::after {
+  background-color: #555;
+}
+
 .featureSvg {
   height: 200px;
   width: 200px;

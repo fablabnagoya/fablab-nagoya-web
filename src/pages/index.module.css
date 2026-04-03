@@ -149,6 +149,23 @@
   line-height: 1.8;
 }
 
+/* Schedule Section */
+.scheduleSection {
+  padding: 4rem 0;
+  background-color: #f5f5f5;
+}
+
+[data-theme='dark'] .scheduleSection {
+  background-color: #1a1a2e;
+}
+
+.scheduleCalendar {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
 /* Access Section */
 .accessSection {
   padding: 4rem 0;

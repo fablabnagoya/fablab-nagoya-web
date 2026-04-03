@@ -4,7 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
-
+import HomepageFeatures from '@site/src/components/Tools';
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -69,12 +69,18 @@ function FabAcademySection() {
     <section className={styles.academySection}>
       <div className="container">
         <Heading as="h2" className={styles.sectionTitle}>Fab Academy</Heading>
+        <div className={styles.statusBox}>
+          <p>
+           Fab Academy 2026の募集は終了しています。来期の応募受付は2026年9月1日開始予定です。
+          </p>
+        </div>
         <div className={styles.academyBanner}>
           <a href="https://fabacademy.org/" target="_blank" rel="noopener noreferrer">
             <img
               src={bannerSrc}
               alt="Fab Academy"
               className={styles.academyBannerImg}
+              width={800}
             />
           </a>
         </div>
@@ -101,9 +107,33 @@ function FabAcademySection() {
             <Heading as="h3">受講料</Heading>
             <p>
               Fab Academyの標準的な受講料は5,000米ドルです。
-              FabLab Nagoyaでの受講料も標準と同額の5,000米ドルをお願い致します。
+              FabLab Nagoyaでの受講料も標準と同額の5,000米ドルです。
             </p>
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ScheduleSection() {
+  return (
+    <section className={styles.scheduleSection}>
+      <div className="container">
+        <Heading as="h2" className={styles.sectionTitle}>スケジュール</Heading>
+        <div className={styles.statusBox}>
+          <p>
+           当面の間、FabLab 名古屋は、スタッフが居るOpen dayにのみ利用をいただけます。
+          </p>
+        </div>
+        <div className={styles.scheduleCalendar}>
+          <iframe
+            src="https://calendar.google.com/calendar/embed?src=c_c01819edce443ebd7bebb83158f6b579c06474019777f1e783d84f880036a007%40group.calendar.google.com&ctz=Asia%2FTokyo"
+            width="100%"
+            height="600"
+            frameBorder="0"
+            scrolling="no"
+          />
         </div>
       </div>
     </section>
@@ -118,7 +148,9 @@ function AccessSection() {
         <div className={styles.accessContent}>
           <div className={styles.accessInfo}>
             <p className={styles.address}>
-              〒453-0856 愛知県名古屋市中村区並木1丁目183 Seeed株式会社 内
+              FabLab Nagoyaは、Seeed株式会社のオフィス内にあります。<br />
+              〒453-0856 愛知県名古屋市中村区並木1丁目183<br />
+              駐車場の用意はありません。
             </p>
           </div>
           <div className={styles.accessMap}>
@@ -139,7 +171,9 @@ export default function Home(): ReactNode {
       <main>
         <StatusSection />
         <AboutFabLabSection />
+        <HomepageFeatures />
         <FabAcademySection />
+        <ScheduleSection />
         <AccessSection />
       </main>
     </Layout>
