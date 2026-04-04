@@ -44,7 +44,16 @@ const FeatureList: FeatureItem[] = [
     image: '/img/Maslow4.jpg',
     description: (
       <>
-        幅900mm × 長さ1800mmのコンパネ(コンクリート型枠用合板)を切削加工するために使用しています。数mmの誤差があり、あまり精度は良くありません。
+       <a href="https://www.maslowcnc.com/" target="_blank">Maslow 4</a><br />幅900mm × 長さ1800mmのコンパネ(コンクリート型枠用合板)を切削加工するために使用しています。数mmの誤差があり、あまり精度は良くありません。
+      </>
+    ),
+  },
+  {
+    title: 'カッティングマシン',
+    image: '/img/sdx1000.jpg',
+    description: (
+      <>
+        <a href="https://www.brother.co.jp/product/cuttingmachine/sdx1000/" target="_blank">Brother SDX1000</a><br />紙、薄い布、フェルト、PPシート（薄いプラ板）、ウレタンフォーム、シールやステッカーなどのカットができます。
       </>
     ),
   },
