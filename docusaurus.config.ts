@@ -15,10 +15,10 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://fablabnagoya.github.io/',
+  url: 'https://fablab-nagoya.org',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/fablab-nagoya-web/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -136,7 +136,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} FabLab Nagoya ファブラボ名古屋は、Seeed株式会社が運営しています。`,
+      copyright: `Copyright © ${new Date().getFullYear()} FabLab Nagoya<br />ファブラボ名古屋は、Seeed株式会社が運営しています。`,
     },
     prism: {
       theme: prismThemes.github,

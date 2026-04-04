@@ -23,3 +23,13 @@ slorber:
     linkedin: sebastienlorber
     github: slorber
     newsletter: https://thisweekinreact.com
+
+ytsuboi:
+  name: Yoshihiro Tsuboi
+  title: FabLab Nagoya Manager
+  url: https://www.linkedin.com/in/yoshi/
+  image_url: https://github.com/ytsuboi.png
+  page: true
+  socials:
+    x: ytsuboi
+    github: ytsuboi

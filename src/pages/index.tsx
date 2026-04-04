@@ -32,7 +32,8 @@ function StatusSection() {
         <div className={styles.statusBox}>
           <Heading as="h2">お知らせ</Heading>
           <p>
-            現在、ファブラボ名古屋は準備段階です。工作機械の設置とSeeed株式会社との間の仕切りの設置を行っています。
+            現在、ファブラボ名古屋は準備段階です。<br />
+            当面の間、FabLab 名古屋は下記カレンダーに記載のOpen dayにのみ利用をいただけます。
           </p>
         </div>
       </div>
