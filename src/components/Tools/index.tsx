@@ -57,6 +57,24 @@ const FeatureList: FeatureItem[] = [
       </>
     ),
   },
+  {
+    title: '刺繍用ミシン',
+    image: '/img/skitch-pp1.jpg',
+    description: (
+      <>
+        <a href="https://www.brother.co.jp/product/hsm/embropc/pp1/index.aspx" target="_blank">Brother SKiTCH PP1</a><br />専用アプリ『Artspira(アートスピラ)』を使って、スマートフォンやタブレットでデータ作成や編集、データ転送などを行う刺繍専用機です。
+      </>
+    ),
+  },
+  {
+    title: '小型ボール盤',
+    image: '/img/DP2250R.jpeg',
+    description: (
+      <>
+        <a href="https://www.toyoas.jp/products/category/drilling/detail.html?p=1140" target="_blank">REXON DP2250R</a><br />アルミのケースを加工する目的などに使用しています。
+      </>
+    ),
+  },
 ];
 
 function Feature({title, image, description}: FeatureItem) {
