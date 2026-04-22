@@ -74,6 +74,7 @@ const FeatureList: FeatureItem[] = [
         5.7L 真空チャンバー<br />型取りの際にシリコーンやレジンの脱泡を行います。チャンバーの直径195ミリ、高さ149ミリです。
       </>
     ),
+  },
     {
     title: '小型ボール盤',
     image: '/img/DP2250R.jpeg',
